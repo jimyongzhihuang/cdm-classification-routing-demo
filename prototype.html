@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CDM Classification Routing Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.5;
+      max-width: 1100px;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    .subtitle {
+      color: #555;
+      margin-top: 6px;
+    }
+    .flow {
+      margin-top: 24px;
+      padding: 14px;
+      border: 1px solid #ccc;
+      background: #fafafa;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 24px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>CDM Classification Routing Demo</h1>
+  <p class="subtitle">Input record → CDM drawer → Rule route → Institutional consequence</p>
+
+  <p>
+    The Cabinet-Drawer Model (CDM) shows how the same institutional fact, document,
+    transaction, record, event, or AI input can lead to different consequences depending
+    on the drawer into which it is classified.
+  </p>
+
+  <p>
+    CDM is not limited to supply chains, logistics, blockchain, taxation, or legal analysis.
+    These are application areas. The core model is broader: it shows how institutional systems
+    first classify information before rules, pathways, decisions, and consequences are triggered.
+  </p>
+
+  <div class="flow">
+    <strong>Core sequence:</strong>
+    Input record → classification drawer → rule path → institutional consequence
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Input record</th>
+        <th>CDM drawer</th>
+        <th>Route</th>
+        <th>Institutional consequence</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>payment received</td>
+        <td>income</td>
+        <td>taxable income route</td>
+        <td>income inclusion review</td>
+      </tr>
+      <tr>
+        <td>payment received</td>
+        <td>gift</td>
+        <td>non-income / capital transfer route</td>
+        <td>no ordinary income route</td>
+      </tr>
+      <tr>
+        <td>property transfer</td>
+        <td>sale</td>
+        <td>disposition route</td>
+        <td>gain/loss review</td>
+      </tr>
+      <tr>
+        <td>property transfer</td>
+        <td>rollover</td>
+        <td>deferred tax route</td>
+        <td>deferral review</td>
+      </tr>
+      <tr>
+        <td>trust distribution</td>
+        <td>income distribution</td>
+        <td>beneficiary income route</td>
+        <td>income allocation review</td>
+      </tr>
+      <tr>
+        <td>trust distribution</td>
+        <td>capital distribution</td>
+        <td>capital route</td>
+        <td>capital distribution review</td>
+      </tr>
+      <tr>
+        <td>customs document</td>
+        <td>import declaration</td>
+        <td>border compliance route</td>
+        <td>customs review</td>
+      </tr>
+      <tr>
+        <td>warehouse record</td>
+        <td>inventory movement</td>
+        <td>logistics routing route</td>
+        <td>warehouse flow review</td>
+      </tr>
+      <tr>
+        <td>student application record</td>
+        <td>eligibility file</td>
+        <td>access review route</td>
+        <td>admission / access decision review</td>
+      </tr>
+      <tr>
+        <td>AI prompt input</td>
+        <td>unsupported claim</td>
+        <td>pre-judgment control route</td>
+        <td>output restriction or verification review</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
