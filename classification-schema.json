@@ -1,0 +1,67 @@
+{
+  "model": "Cabinet-Drawer Model (CDM)",
+  "version": "0.1",
+  "description": "An institutional classification-routing schema for records, facts, documents, transactions, events, and AI inputs before downstream judgment.",
+  "classification_unit": {
+    "input_record": "Raw fact, document, transaction, record, event, or institutional signal entering a system.",
+    "drawer": "Functional classification category assigned before downstream routing.",
+    "route": "Rule path triggered by the drawer classification.",
+    "institutional_consequence": "Legal, tax, compliance, administrative, operational, educational, financial, or AI-governance effect produced by the route."
+  },
+  "core_sequence": [
+    "input_record",
+    "cdm_drawer",
+    "rule_route",
+    "institutional_consequence"
+  ],
+  "sample_drawers": [
+    {
+      "input_record": "payment received",
+      "drawer": "income",
+      "route": "taxable income route",
+      "institutional_consequence": "income inclusion review"
+    },
+    {
+      "input_record": "payment received",
+      "drawer": "gift",
+      "route": "non-income / capital transfer route",
+      "institutional_consequence": "no ordinary income route"
+    },
+    {
+      "input_record": "property transfer",
+      "drawer": "sale",
+      "route": "disposition route",
+      "institutional_consequence": "gain/loss review"
+    },
+    {
+      "input_record": "property transfer",
+      "drawer": "rollover",
+      "route": "deferred tax route",
+      "institutional_consequence": "deferral review"
+    },
+    {
+      "input_record": "trust distribution",
+      "drawer": "income distribution",
+      "route": "beneficiary income route",
+      "institutional_consequence": "income allocation review"
+    },
+    {
+      "input_record": "trust distribution",
+      "drawer": "capital distribution",
+      "route": "capital route",
+      "institutional_consequence": "capital distribution review"
+    },
+    {
+      "input_record": "customs document",
+      "drawer": "import declaration",
+      "route": "border compliance route",
+      "institutional_consequence": "customs review"
+    },
+    {
+      "input_record": "AI prompt input",
+      "drawer": "unsupported claim",
+      "route": "pre-judgment control route",
+      "institutional_consequence": "output restriction or verification review"
+    }
+  ]
+}
