@@ -1,0 +1,12 @@
+input_record,cdm_drawer,route,institutional_consequence
+payment received,income,taxable income route,income inclusion review
+payment received,gift,non-income / capital transfer route,no ordinary income route
+payment received,loan,debt route,repayment / liability review
+property transfer,sale,disposition route,gain/loss review
+property transfer,rollover,deferred tax route,deferral review
+trust distribution,income distribution,beneficiary income route,income allocation review
+trust distribution,capital distribution,capital route,capital distribution review
+customs document,import declaration,border compliance route,customs review
+warehouse record,inventory movement,logistics routing route,warehouse flow review
+student application record,eligibility file,access review route,admission / access decision review
+AI prompt input,unsupported claim,pre-judgment control route,output restriction or verification review
